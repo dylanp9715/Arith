@@ -1,0 +1,22 @@
+Dylan Park and Derek Sims
+
+We received help from various TAs.
+
+Everything should be implemented correctly.
+
+We first determine from user input whether to call compress40 or decompress40,
+both of which are in our compress40.c file. If they called compress40, we run 
+the compress40 function which will read in the ppm and perform the calculations
+necessary to convert the pixels from rgb values to video color and pack the 
+blocks of a uarray2b that we create. The first set of calculations is done in 
+our rgb_vid_conversion file while the second set is performed in our 
+pack_or_unpack file. If the user called decompress40, we will run the 
+decompress40 function which will read in the code words with functions in 
+process_compressed and then perform the calculations necessary to unpack the 
+code words and convert from vid_color values to rgb values. These first 
+calculations are performed in pack_or_unpack and the second set is in 
+rgb_vid_conversion.
+
+Hours Spent Analyzing Problems: 30
+
+Hours Spent Solving Problems: 10
